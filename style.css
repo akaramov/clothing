@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: white;
+  font-size: 14px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.logo span {
+  color: #666;
+}
+
+.cart {
+  cursor: pointer;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.product-card {
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-name {
+  font-size: 14px;
+}
+
+.price {
+  font-size: 13px;
+  color: gray;
+}
+
+.add-to-cart {
+  margin-top: 0.5rem;
+  padding: 6px 12px;
+  font-size: 12px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Cart Sidebar */
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -350px;
+  width: 300px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.cart-sidebar.open {
+  right: 0;
+}
+
+.cart-sidebar h3 {
+  margin-bottom: 1rem;
+}
+
+.cart-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-sidebar li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-sidebar li span {
+  font-size: 12px;
+}
+
+.cart-sidebar button {
+  margin-top: 1rem;
+  padding: 5px 10px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 4px;
+}

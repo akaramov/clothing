@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AK Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <span class="time">3:33:19 PM</span>
+      <h1 class="logo">ak<span>mv</span></h1>
+      <div class="cart">CART (0)</div>
+    </header>
+
+    <main class="product-grid">
+      <div
+        class="product-card"
+        data-name="Jersey AK"
+        data-price="40"
+        data-img="images/shirt1.png"
+      >
+        <img src="./image/download__4_-removebg-preview.png" alt="Jersey AK" />
+        <p class="product-name">អាវកីឡា prank</p>
+        <p class="price">$40.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div
+        class="product-card"
+        data-name="Shirt Prank B"
+        data-price="30"
+        data-img="images/shirt2.png"
+      >
+        <img src="./image/shirt-removebg-preview.png" alt="Shirt Prank B" />
+        <p class="product-name">អាវ prank b</p>
+        <p class="price">$30.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </main>
+
+    <!-- Cart Sidebar -->
+    <div id="cartSidebar" class="cart-sidebar">
+      <h3>Your Cart</h3>
+      <ul id="cartItems"></ul>
+      <p>Total: $<span id="cartTotal">0.00</span></p>
+      <button onclick="closeCart()">Close</button>
+    </div>
+  </body>
+</html>
